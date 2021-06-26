@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+
+:root {
+  --box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  font-family: "Barlow", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  width: 14rem;
+  height: 9rem;
+  border-radius: 0.5rem;
+  background-color: #657383;
+  box-shadow: var(--box-shadow);
+}
+
+.btn {
+  font-style: oblique;
+  background: lightslategray;
+  font-size: 2.5rem;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: var(--box-shadow);
+  border: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
